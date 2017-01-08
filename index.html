@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Testes es6</title>
+	<style type="text/css">
+		*{margin:0;padding:0}.upload{width:100%;height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column}.image{background:#2c3e50}.audio{background:#2980b9}audio{width:50%;height:50px;margin:0 auto}.btn{width:30%;height:10vh;background:#1abc9c;border-radius:3px;display:flex;align-items:center;justify-content:center;font-family:'Helvetica',sans-serif;color:#fff;font-size:18px;cursor:pointer}.container{width:70%;height:70vh;background:#fff;margin-top:40px;border-radius:3px;overflow-y:scroll;overflow-x:hidden;flex-direction:column;justify-content:center}.scroll{width:100%;height:100%;display:flex;justify-content:center;flex-direction:column}.scroll img{width:100%;height:100%}input[type='file']{display:none}a{width:100%;height:100%}
+	</style>
+	<script type="text/javascript">function abreinput(a){const b=a.getAttribute("data-class");document.querySelector("."+b).click()}</script>
+</head>
+<body>
+
+<!-- UPLOAD DE IMAGEM -->
+
+<div class="upload image">
+	<input type="file" name="" id="arquivos" multiple accept="image/*" class="upImage">
+	<div class="btn" data-class="upImage" data-click="upload" onclick='abreinput(this)'>Upload Imagem</div>
+	<div class="container">
+		<div class="scroll">
+			
+		</div>
+	</div>
+</div>
+
+<!-- UPLOAD DE AUDIO -->
+
+<div class="upload audio">
+	<input type="file" name="" id="musicas" multiple accept="audio/*" class="upMusica">
+	<div class="btn" data-class="upMusica" data-click="upload" onclick='abreinput(this)'>Upload De Musica</div>
+	<div class="container">
+		<div class="scroll"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src='src/seletor.js'></script>
+<script type="text/javascript" src='src/conversor.js'></script>
+<script type="text/javascript" src='src/script.js'></script>
+
+</body>
+</html>
